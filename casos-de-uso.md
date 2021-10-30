@@ -84,6 +84,7 @@
 
 
 **Fluxo Alternativo B**
+
 1- O sistema apresenta uma barra no canto superior direito
 
 2- O usuário clica em “editar usuário”
