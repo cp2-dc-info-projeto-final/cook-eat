@@ -2,7 +2,8 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): Quisque id neque a erat imperdiet dictum et ut mauris.
+ - Fluxos principais e alternativos do Caso de uso (# Fluxos Principais e Alternativos do Caso de Uso
+): Quisque id neque a erat imperdiet dictum et ut mauris.
  - [CDU 02](#CDU-02): Morbi fringilla dolor at mattis vestibulum.
  - [CDU 03](#CDU-03): Duis nec orci quis velit faucibus hendrerit tempus vel libero.
 
@@ -18,7 +19,7 @@
 
 ## Descrição dos Casos de Uso
 
-###Fluxos Principais e Alternativos do Caso de Uso
+### Fluxos Principais e Alternativos do Caso de Uso
 
 **Fluxo Principal**
 
@@ -43,39 +44,38 @@
 5. O sistema informa ao usuário que a solicitação de criação de conta foi feita e está em análise
 
 
-### CDU 02
+### FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT
 
-Morbi fringilla dolor at mattis vestibulum.
+**Fluxo Principal** 
 
-**Fluxo Principal**
+1- O sistema apresenta uma barra no canto superior direito
+2- O usuário clica em “sair”
+3- O sistema valida o logout
+4- O sistema encaminha para a tela principal
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
-
-**Fluxo Alternativo A**
-
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
-
-### CDU 03
-
-Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO
 
 **Fluxo Principal**
 
-1. Praesent interdum lectus sit amet augue tincidunt imperdiet.
-2. Duis ac dolor vel nisi imperdiet vehicula et non sem.
-3. Nunc imperdiet tortor consequat, lobortis purus non, interdum risus.
+1- O sistema apresenta uma barra no canto superior direito
+2- O usuário clica em “editar usuário”
+3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+4- O usuário troca o nome e a senha e clica na opção “salvar”
+5- O sistema encaminha para a tela inicial
 
 **Fluxo Alternativo A**
 
-1. Aliquam efficitur arcu ac fermentum egestas.
-2. Pellentesque ac diam vitae erat bibendum hendrerit.
-3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
-4. Aenean ullamcorper tellus quis nibh porttitor congue.
-5. Phasellus laoreet erat eget condimentum dictum.
+1- O sistema apresenta uma barra no canto superior direito
+2- O usuário clica em “editar usuário”
+3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+4- O usuário troca o nome e clica em salvar
+5- O sistema troca para o novo nome
+6- O sistema valida e encaminha para a tela inicial
+
+**Fluxo Alternativo B**
+1- O sistema apresenta uma barra no canto superior direito
+2- O usuário clica em “editar usuário”
+3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+4- O usuário troca a senha
+5- O sistema troca para a nova senha
+6- O sistema valida e encaminha para a tela inicia
