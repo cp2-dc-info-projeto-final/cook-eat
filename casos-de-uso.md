@@ -59,9 +59,13 @@
 **Fluxo Principal**
 
 1- O sistema apresenta uma barra no canto superior direito
+
 2- O usuário clica em “editar usuário”
+
 3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+
 4- O usuário troca o nome e a senha e clica na opção “salvar”
+
 5- O sistema encaminha para a tela inicial
 
 **Fluxo Alternativo A**
@@ -71,14 +75,21 @@
 2- O usuário clica em “editar usuário”
 
 3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+
 4- O usuário troca o nome e clica em salvar
+
 5- O sistema troca para o novo nome
+
 6- O sistema valida e encaminha para a tela inicial
+
 
 **Fluxo Alternativo B**
 1- O sistema apresenta uma barra no canto superior direito
+
 2- O usuário clica em “editar usuário”
+
 3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+
 4- O usuário troca a senha
 5- O sistema troca para a nova senha
 6- O sistema valida e encaminha para a tela inicia
