@@ -64,7 +64,9 @@
 **Fluxo Alternativo A**
 
 1- O sistema apresenta uma barra no canto superior direito
+
 2- O usuário clica em “editar usuário”
+
 3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
 4- O usuário troca o nome e clica em salvar
 5- O sistema troca para o novo nome
