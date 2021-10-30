@@ -18,34 +18,29 @@
 
 ## Descrição dos Casos de Uso
 
-### CDU 01
-
-Quisque id neque a erat imperdiet dictum et ut mauris.
+###Fluxos Principais e Alternativos do Caso de Uso
 
 **Fluxo Principal**
 
-1. Vivamus nec velit id risus sodales fermentum ut a mi.
-2. Nunc a ligula ac libero pellentesque auctor ornare at sem.
-3. In quis ante scelerisque felis luctus malesuada.
-4. Pellentesque mattis dui quis eleifend accumsan.
+1. O sistema apresenta um formulário com os campos login e senha 
+2. O usuário insere seu login e sua senha e clica no botão “Entrar” 
+3. O sistema valida o login e a senha do usuário
+4. O sistema encaminha o usuário para sua tela inicial 
 
-**Fluxo Alternativo A**
-
-1. Pellentesque id mauris id ex fringilla iaculis.
-2. Maecenas ut dui at sapien rhoncus porttitor in sed turpis.
-3. Maecenas fringilla augue id sodales volutpat.
-4. Nulla vehicula lectus eu eros faucibus porta.
-5. Morbi non sem in diam dictum aliquet sit amet at metus.
-6. Aenean dictum diam in tempus ornare.
+**Fluxo Alternativo A **
+1. O sistema apresenta um formulário com os campos login e senha
+2. O usuário insere seu login e sua senha e clica no botão “Entrar”
+3. O sistema informa que o login e a senha não coincidem
+4. O usuário corrige as informações de login e senha e clica no botão “Entrar”
+5. O sistema encaminha o usuário para sua tela inicial
 
 **Fluxo Alternativo B**
 
-1. Ut elementum dolor id lorem elementum, et condimentum eros laoreet.
-2. Nulla sollicitudin arcu nec suscipit volutpat.
-3. Aliquam mattis sapien nec ornare faucibus.
-4. Sed eu massa nec enim condimentum commodo at eget ligula.
-5. Nam ultricies velit nec erat feugiat condimentum.
-6. Nam vitae lacus porttitor, sodales orci vel, lobortis arcu.
+1. O sistema apresenta um formulário com os campos login e senha 
+2. O usuário clica no botão “Não possuo cadastro” 
+3. O usuário informa nome e e-mail através de um formulário e clica em “Solicitar criação de conta” 
+4. O sistema abre uma solicitação de criação de conta 
+5. O sistema informa ao usuário que a solicitação de criação de conta foi feita e está em análise
 
 
 ### CDU 02
