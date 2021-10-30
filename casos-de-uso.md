@@ -47,8 +47,11 @@
 **Fluxo Principal** 
 
 1- O sistema apresenta uma barra no canto superior direito
+
 2- O usuário clica em “sair”
+
 3- O sistema valida o logout
+
 4- O sistema encaminha para a tela principal
 
 ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO
