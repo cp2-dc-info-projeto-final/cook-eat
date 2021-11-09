@@ -29,16 +29,18 @@
             echo "O email deve possuir no máximo 30 caracteres.<br>";
             $erro = 1;
         }
-        if( $senha != $consenha );
+        if( $senha != $consenha ){
             echo "As senhas precisam ser iguais.";
             $erro = 1;
-
+        }
         // VERIFICA SE NÃO HOUVE ERRO 
         if($erro == 0) {
-            $sql = "INSERT INTO usuarios (username,senha,email)";
-            $sql .= "VALUES ('$username','$senha','$email');";  
+            $senha_cript = password_hash($senha, PASSWORD_DEFAULT);
+            $sql = "INSERT INTO usuarios (username,senha_cript,email)";
+            $sql .= "VALUES ('$username','$senha_cript','$email');";  
             mysqli_query($mysqli,$sql);  
             echo "<br>O usuário foi cadastrado com sucesso!"; 
+            header("Location: Login.html");
         }
     }
     
