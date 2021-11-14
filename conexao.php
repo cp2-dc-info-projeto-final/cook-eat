@@ -1,3 +1,3 @@
 <?php
-    $mysqli = mysqli_connect("localhost","eu","123","cookeat");
+        $mysqli = mysqli_connect("localhost","loga","123","cookeat");
 ?>

@@ -1,18 +1,16 @@
 <?php
-    include "autentica.inc";
     include "conexao.php";
-    $cod_usuario = $_SESSION["cod_usuario"];
+    $cod_usuario = $_GET["cod_usuario"];
     $sql = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario;";
     $res = mysqli_query($mysqli,$sql);
     $usuario = mysqli_fetch_array($res);
-    //$adm = $_SESSION["adm"];
-    
 ?>
-<html>
-    <head>
-        <title>Formulário</title>
-    </head>
-    <style>
+
+    <html>
+        <head>
+            <title>Formulário</title>
+        </head>
+        <style>
         *{margin: 0;padding:0;box-sizing: border-box;}
         body{
             background: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
@@ -28,12 +26,6 @@
             top: 50%;
             transform:translate(-50%, -50%);
             border-radius: 20px;
-        }
-        form h2{
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            
-            
         }
 
         form input[type=text],
@@ -53,14 +45,13 @@
             height: 40px;
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(-45deg,  #ffce51, #ff7253, #fd5754)	 ;
+            background: linear-gradient(-45deg,  #ffce51, #ff7253, #fd5754);
             color: white;
             border: 0;
             border-radius: 20px;
             transition: 1s;
         }
         
-
         form input[type=submit]:hover{
             background: linear-gradient(-45deg,  #eec04c, #ec7054, #ee5a57);
 
@@ -77,14 +68,12 @@
             <p>Senha atual: <input type="password" name="senha_atual" placeholder="Senha atual" size="10"> </p>
             <p>Senha nova: <input type="password" name="senha_nova" placeholder="Nova senha" size="10"> </p>
             <p>Repita a senha nova: <input type="password" name="senha_nova_rep" placeholder="Nova senha" size="10"> </p>
-            <p>E-mail: <input type="text" name="email" size="30" placeholder="Seu email" value="<?php echo $usuario["email"]?>"></p> 
+            <p>E-mail: <input type="text" name="email" size="30" placeholder="Seu email" value="<?php echo $usuario["email"]?>"></p> <br>
+            <p>Conceder Admistrador: <input type="checkbox" name='adm[]' value = 'v1'></p><br>
             <p><input type="submit" value="Enviar!"></p>
         </form>
     </body>
 </html>
 <?php
-            //if($adm == 1){
-               // echo "<p><a href='#' class='menu_item'><i class='bi bi-bookmarks icon'></i> Itens Salvos</a></p>";
-          //  }
     mysqli_close($mysqli);
 ?>

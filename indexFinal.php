@@ -33,10 +33,10 @@
                     <input id="senha" name="senha" placeholder="Senha" type="password">
                 </div>
                 
-                <label for="senha">Confirmar senha</label>
+                <label for="confirmarsenha">Confirmar senha</label>
                 <div class="input">
                     <i class="fas fa-lock"></i>
-                    <input id="senha" name="confirmarsenha" placeholder="Senha" type="password">
+                    <input id="confirmarsenha" name="confirmarsenha" placeholder="Senha" type="password">
                 </div>
                 
                 <div id="btn">
