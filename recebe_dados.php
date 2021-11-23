@@ -36,10 +36,11 @@
         // VERIFICA SE NÃO HOUVE ERRO 
         if($erro == 0) {
             $senha_cript = password_hash($senha, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO usuarios (username,senha_cript,email)";
-            $sql .= "VALUES ('$username','$senha_cript','$email');";  
-            mysqli_query($mysqli,$sql);  
-            echo "<br>O usuário foi cadastrado com sucesso!"; 
+            $sql = "INSERT INTO usuarios (username,senha_cript,email,adm)";
+            $sql .= "VALUES ('$username','$senha_cript','$email',0);";  
+        $var = mysqli_query($mysqli,$sql);  
+        //echo "Esse é o valor do var $var";
+            //echo "<br>O usuário foi cadastrado com sucesso!"; 
             header("Location: Login.html");
         }
     }
@@ -53,7 +54,9 @@
             echo "<strong>Senha:</strong> ".$usuario["senha_cript"]."<br>";
             echo "<strong>Email:</strong> ".$usuario["email"]."<br>";
             echo "<a href='alteraadm.php?cod_usuario=".$usuario["cod_usuario"]."'>Alterar usuário</a><br>";
-            echo "<a href='deletar.php?cod_usuario=".$usuario["cod_usuario"]."'>Deletar</a>";
+            echo "<a href='deletar.php?cod_usuario=".$usuario["cod_usuario"]."'>Deletar</a><br><br>";
+            echo "<a href='conceder.php?cod_usuario=".$usuario["cod_usuario"]."'><input type='button' value='Conceder admistrador'/> </a><br><br>";
+            echo "<a href='tirar.php?cod_usuario=".$usuario["cod_usuario"]."'><input type='button' value='Tirar admistrador'/></a>";
             echo "<br>----------------------------------<br>";
         }
     }
@@ -128,17 +131,6 @@
         }
     }
 
-    $adm = null;
-
-    if(isset($_POST['adm']))
-        $adm = $_POST['adm'];
-
-    if($adm = null){
-        $sql = "UPDATE `usuarios` SET `adm` = '0' WHERE `usuarios`.`cod_usuario` = $cod_usuario";
-    }
-    if($adm != null){
-        $sql = "UPDATE `usuarios` SET `adm` = '1' WHERE `usuarios`.`cod_usuario` = $cod_usuario";
-    }
 
     mysqli_close($mysqli);
 ?>

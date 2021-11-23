@@ -60,7 +60,7 @@
     </style>
 	<body>
         <!--<p><strong>Atualização de Usuário</strong></p>-->
-        <form action="recebe_dados.php" method="POST">
+        <form action="recebe_dados2.php" method="POST">
             <h2>Atualizar usuário</h2><br><br>
             <input type="hidden" name="operacao" value="atualizar">
             <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario?>">
@@ -69,7 +69,7 @@
             <p>Senha nova: <input type="password" name="senha_nova" placeholder="Nova senha" size="10"> </p>
             <p>Repita a senha nova: <input type="password" name="senha_nova_rep" placeholder="Nova senha" size="10"> </p>
             <p>E-mail: <input type="text" name="email" size="30" placeholder="Seu email" value="<?php echo $usuario["email"]?>"></p> <br>
-            <p>Conceder Admistrador: <input type="checkbox" name='adm[]' value = 'v1'></p><br>
+            <p>Conceder Admistrador: <input type="checkbox" name='adm[]' value = 'on'></p><br>
             <p><input type="submit" value="Enviar!"></p>
         </form>
     </body>

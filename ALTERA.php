@@ -5,7 +5,7 @@
     $sql = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario;";
     $res = mysqli_query($mysqli,$sql);
     $usuario = mysqli_fetch_array($res);
-    //$adm = $_SESSION["adm"];
+    $adm = $_SESSION["adm"];
     
 ?>
 <html>
@@ -82,9 +82,3 @@
         </form>
     </body>
 </html>
-<?php
-            //if($adm == 1){
-               // echo "<p><a href='#' class='menu_item'><i class='bi bi-bookmarks icon'></i> Itens Salvos</a></p>";
-          //  }
-    mysqli_close($mysqli);
-?>

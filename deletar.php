@@ -6,4 +6,5 @@
     $res = mysqli_query($mysqli,$sql);
     echo "Usuário deletado com sucesso.";
     echo "<br><br><a href='listar.php'>Volte para a listagem</a>";
+    
 ?>

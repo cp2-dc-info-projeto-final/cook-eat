@@ -19,7 +19,7 @@ $cod_usuario = $_SESSION["cod_usuario"];
     <body>
         <header>
             <nav>
-                <a class="logo" href="home.html">Cookeat</a>
+                <a class="logo" href="home.php">Cookeat</a>
                 <div class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -32,9 +32,9 @@ $cod_usuario = $_SESSION["cod_usuario"];
                     <li><a href="ALTERA.php">Alterar conta</a></li>
                     <li><a href="logout.php">Logout</a></li>
                     <?php 
-                        session_start();
-                        if($_SESSION["adm"] == 1){
-                            echo "<li><a href='listar.php'>Admistração</a></li>"}
+                        //session_start();
+                        if($_SESSION["adm"] == 1)
+                            echo "<li><a href='listar.php'>Admistração</a></li>";
                     ?>
 
 

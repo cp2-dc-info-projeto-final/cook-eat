@@ -24,8 +24,9 @@
                 $_SESSION["username"] = $username;
                 $_SESSION["senha_cript"] = $usuario["senha_cript"];
                 $_SESSION["cod_usuario"] = $usuario["cod_usuario"];
+                $_SESSION["adm"] = $usuario["adm"];
                 // direciona à página inicial
-                header("Location: home.html");
+                header("Location: home.php");
 
             }
             
