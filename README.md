@@ -6,6 +6,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
  - Rafhael 
  - Krislaine
  - Kailane
+ - Larissa
 
  ## Descrição do Projeto
 
