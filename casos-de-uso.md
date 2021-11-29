@@ -5,6 +5,8 @@
  - FLUXOS PRINCIPAIS E ALTERNATIVOS DE CASOS DE USO
  - FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT
  - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO
+ - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR POSTAGEM
+ - FLUXOS PRINCIPAIS E ALTERNATVOS PARA EXCLUIR PUBLICAÇÃO
 
 ## Lista dos Atores
 
@@ -94,3 +96,58 @@
 4- O usuário troca a senha
 5- O sistema troca para a nova senha
 6- O sistema valida e encaminha para a tela inicia
+
+
+### Fluxos Principais e Alternativos para editar postagem 
+
+ 
+
+**Fluxo principal ** 
+
+  1-Ao clicar na barra de navegação o sistema apresenta um botão escrito “adm” 
+
+  2-O sistema permite o acesso ao autor 
+
+  3-O usuário escolhe a opção de editar a publicação  
+
+  4-O administrador altera a postagem e salva  
+
+  5-O sistema atualiza a publicação  
+
+ 
+
+ **Fluxos Alternativos 1** 
+ 
+  1-O usuário aperta em salvar  
+
+  2- O sistema não lê o comando e a publicação não salva  
+
+  3- O usuário atualiza a página e faz o mesmo procedimento do fluxo principal   
+
+ 
+
+ ### Fluxos Principais e Alternativos para excluir postagem  
+
+ 
+**Fluxo principal** 
+
+  1- O sistema apresenta uma barra de navegação  
+
+  2- Ao clicar na barra de navegação o sistema apresenta um botão escrito “adm” 
+
+  3- O sistema permite o acesso ao autor e ao administrador   
+
+  4- O usuário escolhe a opção de excluir postagem 
+
+  5- O sistema lê o comando e a publicação some do feed e do perfil do autor 
+
+ 
+**Fluxo Alternativo 1**
+
+1- O usuário aperta em excluir  
+
+2- O sistema não lê o comando e a publicação não é removida da rede social 
+
+3- O usuário atualiza a página e faz o mesmo procedimento do fluxo principal  
+
+     
