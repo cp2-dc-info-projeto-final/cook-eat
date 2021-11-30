@@ -144,10 +144,37 @@
  
 **Fluxo Alternativo 1**
 
-1- O usuário aperta em excluir  
+  1- O usuário aperta em excluir  
 
-2- O sistema não lê o comando e a publicação não é removida da rede social 
+  2- O sistema não lê o comando e a publicação não é removida da rede social 
 
-3- O usuário atualiza a página e faz o mesmo procedimento do fluxo principal  
+  3- O usuário atualiza a página e faz o mesmo procedimento do fluxo principal  
 
      
+
+ ###FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXIBIR A TIMELINE DO USUÁRIO 
+      
+** Fluxo principal** 
+
+  1-O usuário clica na barra de navegação e o sistema apresenta um ícone de pesquisas 
+
+  2-Ao clicar para pesquisar, o  usuário vai inserir a palavra chave do perfil que ela deseja encontrar 
+
+  3-Realizado a busca, o autor vai encontrar todas as postagens do usuário na rede social. 
+
+
+** Fluxo alternativo 1**
+
+  1- O usuário vai tentar realizar a busca 
+ 
+  2- E a palavra chave não vai estar correta 
+
+  3- O sistema vai da opções de perfis com a palavra chave pesquisada 
+
+** Fluxo Alternativo 2**
+
+  1-O usuário vai tentar realizar a busca com a palavra chave
+  
+  2-O sistema não encontra o usuário 
+  
+  3-O autor atualiza a rede social e faz o mesmo procedimento do fluxo principal
