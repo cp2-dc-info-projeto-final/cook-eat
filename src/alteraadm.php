@@ -69,7 +69,6 @@
             <p>Senha nova: <input type="password" name="senha_nova" placeholder="Nova senha" size="10"> </p>
             <p>Repita a senha nova: <input type="password" name="senha_nova_rep" placeholder="Nova senha" size="10"> </p>
             <p>E-mail: <input type="text" name="email" size="30" placeholder="Seu email" value="<?php echo $usuario["email"]?>"></p> <br>
-            <p>Conceder Admistrador: <input type="checkbox" name='adm[]' value = 'on'></p><br>
             <p><input type="submit" value="Enviar!"></p>
         </form>
     </body>

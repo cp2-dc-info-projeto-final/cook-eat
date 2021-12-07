@@ -130,7 +130,7 @@
             echo "<br><a href='altera.php?cod_usuario=".$usuario["cod_usuario"]."'>Voltar para Alterar usuário</a>";
         }
     }
-
+    
 
     mysqli_close($mysqli);
 ?>

@@ -6,13 +6,13 @@ $cod_usuario = $_SESSION["cod_usuario"];
 
 ?>
 
-<html>
+<!DOCTYPE html>
+    <html>
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Navbar</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <title>Home</title>
+        <link rel='stylesheet' href="st.css">
         <script src="https://kit.fontawesome.com/47e36a68f2.js" crossorigin="anonymous"></script>
 
     </head>
@@ -28,7 +28,7 @@ $cod_usuario = $_SESSION["cod_usuario"];
 
                 <ul class= "nav-list">
                     <li><a href="/">Início</a></li>
-                    <li><a href="/">Sobre</a></li>
+                    <li><a href="buscausuario.php">Buscar usuário</a></li>
                     <li><a href="ALTERA.php">Alterar conta</a></li>
                     <li><a href="logout.php">Logout</a></li>
                     <?php 
@@ -40,8 +40,44 @@ $cod_usuario = $_SESSION["cod_usuario"];
 
                 </ul>
             </nav>
+
         </header>
-        <main></main>
-        <script src="mobile-navbar.js"></script>
+
+            <main class="main">
+                <div class="newPost">
+                    <div class="infoUser">
+                        <div class="imgUser"></div>
+                        <strong>  <?php echo $usuario["username"]?> </strong>
+                    </div>
+
+
+                    <form action="postagem.php" class="formPost" method="POST">
+                        <input type="hidden" name="operacao" id="operacao" value="postagem">
+                        <textarea id="post" id="post" name="post"  placeholder="Diga como está se sentindo..." type="text"></textarea>
+                        <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario?>">
+
+                        <div class="iconsAndButton">
+                                <div class="icons">
+                                <input type="file" name="file" id="file" hidden >
+                                <label for="file"><img src="./imagens/img.svg" style="cursor:pointer" ></label>
+                                <button><img src="./imagens/video.svg" alt="Adicionar um video"></button>
+                                </div>
+                            <button type="submit" class="btnSubmitForm">Publicar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <ul class="posts">
+                        
+                </ul>
+
+
+            </main>
+
+ 
+        <script src="mobile-navbar.js"></script> 
     </body>
+
 </html>

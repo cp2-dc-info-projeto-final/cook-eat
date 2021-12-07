@@ -10,7 +10,6 @@
         $senha_nova = $_POST["senha_nova"];
         $senha_nova_rep = $_POST["senha_nova_rep"];
         $email = $_POST["email"];
-       // $adm = $_POST["adm"];
         $erro = 0;
 
         $sql = "SELECT * FROM usuarios WHERE cod_usuario = $cod_usuario;";
