@@ -68,13 +68,13 @@
 
 1- O sistema apresenta uma barra de navegação na parte superior da tela 
 
-2- O usuário clica em “editar usuário”
+2- O usuário clica em “Alterar conta"
 
-3- O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
+3- O sistema abre uma solicitação de edição de usuário com a opção de username, senha atual , senha nova, repetir a senha nova e e-mail
 
-4- O usuário troca o nome e a senha e clica na opção “salvar”
+4- O usuário troca a senha  e clica em "Enviar!
 
-5- O sistema encaminha para a tela inicial
+5- O sistema atualiza a senha  e encaminha o usuario para uma pagina com o link para efetuar o login
 
 **Fluxo Alternativo A**
 
