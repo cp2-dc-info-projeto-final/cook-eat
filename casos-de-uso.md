@@ -43,7 +43,11 @@
 4. O sistema válida e encaminha para a pagina de login 
   
   
+**Fluxo Alternativo C**
 
+1. O sistema apresenta um formulário com os campos username e senha 
+2. O usuário insere informações inválidas 
+3.  O sistema não reconhece o login e encaminha o usuário para uma página que contém os requisitos necessários para efetuar o cadastro
 
 
 ### FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT
