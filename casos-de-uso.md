@@ -23,25 +23,27 @@
 
 **Fluxo Principal**
 
-1. O sistema apresenta um formulário com os campos login e senha 
-2. O usuário insere seu login e sua senha e clica no botão “Entrar” 
-3. O sistema valida o login e a senha do usuário
+1. O sistema apresenta um formulário com os campos username e senha 
+2. O usuário insere seu username e sua senha e clica no botão “Enviar” 
+3. O sistema valida o username e a senha do usuário
 4. O sistema encaminha o usuário para sua tela inicial 
 
 **Fluxo Alternativo A **
-1. O sistema apresenta um formulário com os campos login e senha
-2. O usuário insere seu login e sua senha e clica no botão “Entrar”
-3. O sistema informa que o login e a senha não coincidem
-4. O usuário corrige as informações de login e senha e clica no botão “Entrar”
+1. O sistema apresenta um formulário com os campos username e senha
+2. O usuário insere seu username e sua senha e clica no botão “Enviar”
+3. O sistema informa que ousername é invalido 
+4. O usuário corrige as informações de username e senha e clica no botão “Enviar”
 5. O sistema encaminha o usuário para sua tela inicial
 
 **Fluxo Alternativo B**
 
-1. O sistema apresenta um formulário com os campos login e senha 
-2. O usuário clica no botão “Não possuo cadastro” 
-3. O usuário informa nome e e-mail através de um formulário e clica em “Solicitar criação de conta” 
-4. O sistema abre uma solicitação de criação de conta 
-5. O sistema informa ao usuário que a solicitação de criação de conta foi feita e está em análise
+1. O sistema apresenta um formulário com os campos username e senha 
+2. O usuário clica no botão “Ainda não é cadastrado?” 
+3. O usuário informa username, e-mail, senha e confirmar senha através de um formulário e clica em “Cadastrar” 
+4. O sistema válida e encaminha para a pagina de login 
+  
+  
+
 
 
 ### FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT
