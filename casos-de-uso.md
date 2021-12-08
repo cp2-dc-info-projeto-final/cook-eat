@@ -45,8 +45,8 @@
   
 **Fluxo Alternativo C**
 
-1. O sistema apresenta um formulário com os campos username e senha 
-2. O usuário insere informações inválidas 
+1. O sistema apresenta um formulário para a realizaçd de cadastro
+2. O usuário insere informações inválida
 3.  O sistema não reconhece o login e encaminha o usuário para uma página que contém os requisitos necessários para efetuar o cadastro
 
 
@@ -54,19 +54,19 @@
 
 **Fluxo Principal** 
 
-1- O sistema apresenta uma barra no canto superior direito
+1- O sistema apresenta uma barra de navegação
 
-2- O usuário clica em “sair”
+2- O usuário clica em “Logout"
 
 3- O sistema valida o logout
 
-4- O sistema encaminha para a tela principal
+4- O sistema encaminha para a tela de login
 
 ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO
 
 **Fluxo Principal**
 
-1- O sistema apresenta uma barra no canto superior direito
+1- O sistema apresenta uma barra de navegação na parte superior da tela 
 
 2- O usuário clica em “editar usuário”
 
