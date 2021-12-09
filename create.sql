@@ -29,6 +29,30 @@ CREATE USER 'loga'@'localhost' IDENTIFIED BY '123';
 GRANT ALL PRIVILEGES ON cookeat.* TO 'loga'@'localhost';
 
 -- --------------------------------------------------------
+--
+-- Estrutura da tabela `posts`
+--
+DROP TABLE IF EXISTS `posts`;
+CREATE TABLE `posts` (
+  `id_post` int(11) NOT NULL,
+  `cod_autor` int(11) NOT NULL,
+  `post` varchar(190) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `posts`
+--
+
+INSERT INTO `posts` (`id_post`, `cod_autor`, `post`) VALUES
+(1, 1, 'adasdasdadadad'),
+(2, 2, 'adasfdgdsgsdgsg'),
+(3, 16, 'adsadada'),
+(4, 16, 'nÃ£o'),
+(5, 16, 'pedro lima Ã© feio'),
+(6, 16, 'Alo'),
+(7, 16, 'adaadaedaf');
+
+
 
 --
 -- Estrutura da tabela `usuarios`
