@@ -2,6 +2,9 @@
 
 include "autentica.inc";
 include "conexao.php";
+$sql = "SELECT * FROM usuarios WHERE username like '$username';";
+$res = mysqli_query($mysqli,$sql);
+$usuario = mysqli_fetch_array($res);
 $cod_usuario = $_SESSION["cod_usuario"];
 
 ?>
@@ -12,7 +15,7 @@ $cod_usuario = $_SESSION["cod_usuario"];
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Home</title>
-        <link rel='stylesheet' href="stylee.css">
+        <link rel='stylesheet' href="styleee.css">
         <script src="https://kit.fontawesome.com/47e36a68f2.js" crossorigin="anonymous"></script>
 
     </head>
@@ -43,11 +46,12 @@ $cod_usuario = $_SESSION["cod_usuario"];
 
         </header>
 
+        
             <main class="main">
                 <div class="newPost">
                     <div class="infoUser">
                         <div class="imgUser"></div>
-                        <strong>  <?php echo $usuario["username"]?> </strong>
+                        <strong> Bem-vindo <?php echo $usuario["username"]?>!</strong>
                     </div>
 
 
@@ -69,12 +73,11 @@ $cod_usuario = $_SESSION["cod_usuario"];
 
 <br><br><br><br><br><br><br>
 
-            <form action="exibirpost.php" method="POST" class="mostposts" >
+            <form action="postagem.php" method="POST" class="mostposts" >
                 <input type="hidden" name="operacao" id="operacao" value="mostrarpublicacoes">
                 <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario;?>">
                 <button type="submit" class="mostposts">Mostrar publicações</button>
               </form>
-
             
 
             </main>

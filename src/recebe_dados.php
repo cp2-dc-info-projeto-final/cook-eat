@@ -70,7 +70,10 @@
             echo "<strong>Username:</strong> ".$usuario["username"]."<br>";
             echo "<strong>Senha:</strong> ".$usuario["senha_cript"]."<br>";
             echo "<strong>Email:</strong> ".$usuario["email"]."<br>";
-            echo "<a href='alteraadm.php?cod_usuario=".$usuario["cod_usuario"]."'>Alterar usuário</a>";
+            echo "<a href='alteraadm.php?cod_usuario=".$usuario["cod_usuario"]."'>Alterar usuário</a><br><br>";
+            echo "<a href='deletar.php?cod_usuario=".$usuario["cod_usuario"]."'>Deletar</a><br><br>";
+            echo "<a href='conceder.php?cod_usuario=".$usuario["cod_usuario"]."'><input type='button' value='Conceder admistrador'/> </a><br><br>";
+            echo "<a href='tirar.php?cod_usuario=".$usuario["cod_usuario"]."'><input type='button' value='Tirar admistrador'/></a>";
             echo "<br>----------------------------------<br>";
         }
     }
@@ -130,45 +133,9 @@
             echo "<br><a href='altera.php?cod_usuario=".$usuario["cod_usuario"]."'>Voltar para Alterar usuário</a>";
         }
     }
-// Postagem
+
          
-        elseif($operacao == "postagem"){
-        $cod_usuario = $_POST["cod_usuario"];
-        $img_post = $_FILES["img_post"];
-        $texto = $_POST["texto"];
-
-
-        $erro = 0;
-
-        $sql = "SELECT * FROM postagens";
-        $res = mysqli_query($mysqli,$sql);
-        $postagem = mysqli_fetch_array($res);
-
-        include"pubicacao.php";
-
-        $caminho_post = upload_publicacao($img_post);
-
-            if($caminho_post === false){
-                echo "Não foi possível carregar a imagem corretamente.<br>";
-                echo "<a href='home.php'>Voltar</a>";
-                $erro = 1;
-        }
-            if ($_FILES['img_post']['size'] == 0 && $texto != 0){
-                echo "Não foi possível carregar a imagem corretamente.<br>";
-                $erro = 1;
-        }
-            // VERIFICA SE NÃO HOUVE ERRO 
-            if($erro == 0) {
-
-                $sql = "INSERT INTO postagens (cod_autor,caminho_post,texto)";
-                $sql .= "VALUES ('$cod_usuario','$caminho_post','$texto');";  
-                mysqli_query($mysqli,$sql);  
-                header("Location: postagensexibir.php?operacao=exibir&cod_usuario=".$cod_usuario."");
-        }
-            else{
-                echo "<a href='home.php'Tela Inicial</a>";
-        }
-    }
+        
 
     mysqli_close($mysqli);
 ?>
