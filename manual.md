@@ -4,12 +4,12 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
 
 **Lista das Funcionalidades:**
 
- - [Cadastro]
- - [Login]
- - [Home]
- - [Busca de usuários] 
- - [Atualizar usuário]
- - [Comentários]
+ - [Cadastro](#Cadastro)
+ - [Login](#Login)
+ - [Home](#Home)
+ - [Busca de usuários](#Busca de usuário)
+ - [Atualizar usuário](#Atualizar usuário)
+ - [Comentários](#Comentários)
 
 ## Cadastro
 
@@ -53,5 +53,6 @@ Aqui vocês poderão atualizar o dado de vocês, username, senha...
 Aqui vocês poderão comentar nas publicações de outros usuários:
 
 ![comentário na publicação](https://user-images.githubusercontent.com/55742499/145693197-83f82c89-0a89-47da-907c-2e5f6db91a2d.jpg)
+
 
 
