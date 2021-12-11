@@ -9,11 +9,16 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
  - 
 
 ## Cadastro
+
+No cadastro vocês irão escolher um username, um email e uma senha e depois confirmarão essa senha:
+
 ![cadastrar](https://user-images.githubusercontent.com/55742499/145692671-18b53c95-600f-481d-b397-4243d2e73c4e.jpg)
 
+A seguir o site irá redirecionar para a página de login para poderem entrar em sua nova conta
 
 
-## Funcionalidade Y
+
+## Login
 
 In vestibulum euismod orci, vitae mollis neque luctus vel. Aliquam erat volutpat. Pellentesque nulla elit, iaculis posuere interdum a, imperdiet sollicitudin dui. Morbi consectetur cursus dictum. Etiam vel feugiat tortor, non tempor nibh. Nam eu massa libero. Donec id eleifend justo, tempus consectetur augue. Phasellus porttitor ex leo. Proin efficitur ante vel tortor tempus ornare. Cras molestie, velit non laoreet lobortis, nisl metus volutpat augue, id dictum libero ipsum a mi. Quisque eget tristique felis.
 
