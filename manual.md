@@ -8,6 +8,8 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
  - Login
  - Home
  - Busca de usuários
+ - Atualizar usuário
+ - Comentários
 
 ## Cadastro
 
@@ -40,9 +42,15 @@ Aqui vocês poderão encontrar outros usuários:
 ![procurar usuários 2](https://user-images.githubusercontent.com/55742499/145693079-4af78350-fe49-4b2a-b066-9f148489c414.jpg)
 
 
-## Funcionalidade Z
+## Atualizar usuário
 
-Sed consequat, diam in imperdiet fringilla, magna metus vehicula ipsum, eu tincidunt massa dolor eget lorem. Integer pellentesque in massa in eleifend. Phasellus a interdum enim. Nullam malesuada nulla eu mi vestibulum imperdiet. Maecenas diam dolor, commodo eget commodo at, congue in libero. Morbi non erat enim. Nunc faucibus lacus urna. Aliquam erat volutpat. Aliquam ex nunc, dictum vel libero sit amet, varius pulvinar risus. Aenean tempus magna at nulla elementum, vel feugiat turpis sodales. Vestibulum viverra congue nibh sed tempor. Morbi faucibus rhoncus dictum. Vestibulum rutrum, nisi id porttitor posuere, purus leo accumsan turpis, sit amet rutrum nulla turpis sit amet ex. Sed ultricies pharetra libero, sed tempor tellus hendrerit eget. Maecenas nibh sem, accumsan ullamcorper felis sed, pharetra semper dolor. Pellentesque ornare lorem eu condimentum tincidunt
-## Funcionalidade Z
+Aqui vocês poderão atualizar o dado de vocês, username, senha...
 
-Sed consequat, diam in imperdiet fringilla, magna metus vehicula ipsum, eu tincidunt massa dolor eget lorem. Integer pellentesque in massa in eleifend. Phasellus a interdum enim. Nullam malesuada nulla eu mi vestibulum imperdiet. Maecenas diam dolor, commodo eget commodo at, congue in libero. Morbi non erat enim. Nunc faucibus lacus urna. Aliquam erat volutpat. Aliquam ex nunc, dictum vel libero sit amet, varius pulvinar risus. Aenean tempus magna at nulla elementum, vel feugiat turpis sodales. Vestibulum viverra congue nibh sed tempor. Morbi faucibus rhoncus dictum. Vestibulum rutrum, nisi id porttitor posuere, purus leo accumsan turpis, sit amet rutrum nulla turpis sit amet ex. Sed ultricies pharetra libero, sed tempor tellus hendrerit eget. Maecenas nibh sem, accumsan ullamcorper felis sed, pharetra semper dolor. Pellentesque ornare lorem eu condimentum tincidunt
+![atualização do usuário](https://user-images.githubusercontent.com/55742499/145693164-365e6bc8-736a-48ff-ac32-d6fc52175df5.jpg)
+
+## Comentários
+
+Aqui vocês poderão comentar nas publicações de outros usuários:
+
+![comentário na publicação](https://user-images.githubusercontent.com/55742499/145693197-83f82c89-0a89-47da-907c-2e5f6db91a2d.jpg)
+
