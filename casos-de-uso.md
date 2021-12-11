@@ -19,7 +19,8 @@
 
   ## Descrição dos Casos de Uso
 
-  ### Fluxos Principais e Alternativos do Caso de Uso
+  ### FLUXOS PRINCIPAIS E ALTERNATIVOS DO CASO-DE-USO
+
 
   **Fluxo Principal**
 
@@ -80,7 +81,7 @@
 
 
 
-  ### Fluxos Principais e Alternativos para editar postagem 
+  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR A POSTAGEM
 
  
   **Fluxo principal** 
@@ -99,7 +100,7 @@
   3. O usuário atualiza a página e faz o mesmo procedimento do fluxo principal   
 
  
- ### Fluxos Principais e Alternativos para excluir postagem  
+ ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXCLUIR A POSTAGEM  
 
  
   **Fluxo principal** 
@@ -140,3 +141,10 @@
   2. O sistema não encontra o usuário 
   3. O autor atualiza a rede social e faz o mesmo procedimento do fluxo principal
 
+  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA CURTIR
+
+  **Fluxos Principais**
+
+  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA FAZER COMENTARIO
+
+  **Fluxos principais**
