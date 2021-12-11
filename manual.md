@@ -10,7 +10,7 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
 
 ## Cadastro
 
-No cadastro vocês irão escolher um username, um email e uma senha e depois confirmarão essa senha:
+No cadastro vocês irão escolher um username, um email e uma senha e depois confirmarão a senha que escolheram:
 
 ![cadastrar](https://user-images.githubusercontent.com/55742499/145692671-18b53c95-600f-481d-b397-4243d2e73c4e.jpg)
 
@@ -20,9 +20,11 @@ A seguir o site irá redirecionar para a página de login para poderem entrar em
 
 ## Login
 
-In vestibulum euismod orci, vitae mollis neque luctus vel. Aliquam erat volutpat. Pellentesque nulla elit, iaculis posuere interdum a, imperdiet sollicitudin dui. Morbi consectetur cursus dictum. Etiam vel feugiat tortor, non tempor nibh. Nam eu massa libero. Donec id eleifend justo, tempus consectetur augue. Phasellus porttitor ex leo. Proin efficitur ante vel tortor tempus ornare. Cras molestie, velit non laoreet lobortis, nisl metus volutpat augue, id dictum libero ipsum a mi. Quisque eget tristique felis.
+No Login vocês vão colocar seu username e a senha que possuem. Para poderem estrar na conta de vocês
 
-Donec auctor a orci a semper. Nunc consequat dui vel eros faucibus molestie. Praesent euismod purus nec justo iaculis varius. Integer vehicula ac metus at ultricies. Maecenas pulvinar neque sed est sollicitudin, vitae dignissim magna posuere. Sed consectetur, mi nec bibendum sodales, urna sem aliquam leo, mollis vulputate justo leo vel nunc. Sed lacinia ipsum lacus, ultrices iaculis tellus efficitur at. Proin consectetur orci ac egestas aliquam. Proin dignissim euismod turpis sollicitudin interdum. Mauris pellentesque, orci non accumsan lobortis, nunc felis hendrerit tortor, non rutrum risus nisl id erat.
+![LOGIN](https://user-images.githubusercontent.com/55742499/145692928-71fdaf45-12a6-4f77-ae9e-461f4a0a4763.jpg)
+
+A seguir serão encaminhados para a página incial 
 
 ## Funcionalidade Z
 
