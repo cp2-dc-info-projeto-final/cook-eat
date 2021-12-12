@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 10-Dez-2021 às 18:54
--- Versão do servidor: 5.7.17
--- PHP Version: 5.6.30
+-- Generation Time: 12-Dez-2021 às 03:06
+-- Versão do servidor: 10.1.38-MariaDB
+-- versão do PHP: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,13 +31,47 @@ USE `cookeat`;
 --
 
 DROP TABLE IF EXISTS `comment`;
-CREATE TABLE IF NOT EXISTS `comment` (
+CREATE TABLE `comment` (
   `cod_autor` int(11) NOT NULL,
   `cod_postagem` int(11) NOT NULL,
-  `comentario` int(150) NOT NULL,
-  `cod_coment` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`cod_coment`)
+  `comentario` varchar(150) NOT NULL,
+  `cod_coment` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `comment`
+--
+
+INSERT INTO `comment` (`cod_autor`, `cod_postagem`, `comentario`, `cod_coment`) VALUES
+(28, 14, '0', 1),
+(28, 14, 'olÃ¡\r\n', 2),
+(28, 14, 'Rafhael', 3),
+(28, 14, 'zumzumzum', 4),
+(28, 15, 'lula2022', 5);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `curtidas`
+--
+
+DROP TABLE IF EXISTS `curtidas`;
+CREATE TABLE `curtidas` (
+  `cod_curtida` int(11) NOT NULL,
+  `cod_usuario` int(11) NOT NULL,
+  `cod_comentario` int(11) DEFAULT NULL,
+  `cod_postagem` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `curtidas`
+--
+
+INSERT INTO `curtidas` (`cod_curtida`, `cod_usuario`, `cod_comentario`, `cod_postagem`) VALUES
+(2, 28, 0, 15),
+(4, 28, 0, 14),
+(5, 28, 1, 0),
+(6, 28, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -46,12 +80,11 @@ CREATE TABLE IF NOT EXISTS `comment` (
 --
 
 DROP TABLE IF EXISTS `posts`;
-CREATE TABLE IF NOT EXISTS `posts` (
-  `id_post` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `posts` (
+  `id_post` int(11) NOT NULL,
   `cod_autor` int(11) NOT NULL,
-  `post` varchar(190) NOT NULL,
-  PRIMARY KEY (`id_post`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+  `post` varchar(190) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `posts`
@@ -70,7 +103,10 @@ INSERT INTO `posts` (`id_post`, `cod_autor`, `post`) VALUES
 (10, 16, 'vasco\r\n'),
 (11, 26, 'aaaaaaaaa'),
 (12, 26, 'koe '),
-(13, 16, 'olÃ¡\r\n');
+(13, 16, 'olÃ¡\r\n'),
+(14, 28, 'oi'),
+(15, 28, 'diretinho'),
+(16, 28, 'teste');
 
 -- --------------------------------------------------------
 
@@ -79,14 +115,13 @@ INSERT INTO `posts` (`id_post`, `cod_autor`, `post`) VALUES
 --
 
 DROP TABLE IF EXISTS `usuarios`;
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `cod_usuario` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `usuarios` (
+  `cod_usuario` int(11) NOT NULL,
   `username` varchar(10) NOT NULL,
   `senha_cript` varchar(255) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `adm` tinyint(1) NOT NULL,
-  PRIMARY KEY (`cod_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
+  `adm` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -97,7 +132,64 @@ INSERT INTO `usuarios` (`cod_usuario`, `username`, `senha_cript`, `email`, `adm`
 (24, 'clecio', '$2y$10$54P2N91it/cK52Bmy4nBTOkiOBXPduwdGy5teOF7lo4l9hp2jCHIi', 'rafhael.pimentel.rj@gmail.com', 0),
 (25, 'JosÃ©', '$2y$10$OWM47RnDbzeLSgypfYaz0u1qETZCjxeiEjRZaohgYzzvwSFXGBBrC', 'rafhael.pimentel.rj@gmail.com', 1),
 (26, 'geovanna', '$2y$10$S3YoF5cO47URi897w37PfueuCb4KSxnTR5akRXXqj2x0ouBZaeAXa', 'geovanna@gmail.com', 0),
-(27, 'Daisy', '$2y$10$3T5fIdXGDZICMGONY8uJWuj1bx.F0NYtROkvbQErTPBP9iHX8n/eW', 'daisy@gmail.com', 0);
+(27, 'Daisy', '$2y$10$3T5fIdXGDZICMGONY8uJWuj1bx.F0NYtROkvbQErTPBP9iHX8n/eW', 'daisy@gmail.com', 0),
+(28, 'teste', '$2y$10$l.uMHYjIHT7P7cZQof4eRuXR5juvVyPk1ZAYKtG9I/1Dmbbo7P4za', 'teste@123.com', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `comment`
+--
+ALTER TABLE `comment`
+  ADD PRIMARY KEY (`cod_coment`);
+
+--
+-- Indexes for table `curtidas`
+--
+ALTER TABLE `curtidas`
+  ADD PRIMARY KEY (`cod_curtida`);
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id_post`);
+
+--
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`cod_usuario`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `comment`
+--
+ALTER TABLE `comment`
+  MODIFY `cod_coment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `curtidas`
+--
+ALTER TABLE `curtidas`
+  MODIFY `cod_curtida` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `cod_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
