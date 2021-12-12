@@ -30,7 +30,7 @@ No Login vocês vão colocar seu username e a senha que possuem. Para poderem es
 A seguir serão encaminhados para a página incial 
 
 ## Home
-Essa é a página inicial que vocês irão encontrar ao acessarem a conta:
+Essa é a página inicial que vocês irão encontrar ao acessarem a conta, aonde existir outros butões de acesso para outras funcionalidades:
 
 ![home](https://user-images.githubusercontent.com/55742499/145693023-bd0a5783-74df-4bcd-996f-cd405cd1a9f9.jpg)
 
@@ -44,7 +44,7 @@ Aqui vocês poderão encontrar outros usuários:
 
 ## Atualizar usuário
 
-Aqui vocês poderão atualizar o dado de vocês, username, senha...
+Aqui vocês poderão atualizar a sua senha:
 
 ![atualização do usuário](https://user-images.githubusercontent.com/55742499/145693164-365e6bc8-736a-48ff-ac32-d6fc52175df5.jpg)
 
