@@ -9,11 +9,11 @@
 
 
 
-    <form action="recebe_dados.php" method="POST">
+    <form action="buscausu.php" method="POST">
         <div class="search-box">
-            <input type="hidden" name="operacao" value="buscar">
-            <input class="search-txt" type="text" name="" placeholder="Procure o usuário...">
-            <a class="search-btn" href=""><i class="fas fa-search"></i></a>
+            <input type="hidden" name="operacao" value="buscausu">
+            <input class="search-txt" type="text" name="username" placeholder="Procure o usuário...">
+            <a class="search-btn"><i class="fas fa-search"></i></a>
         
         </div>
     </form>

@@ -33,6 +33,14 @@
             echo "As senhas precisam ser iguais.";
             $erro = 1;
         }
+        $sql_conferir_user = "SELECT * FROM usuarios WHERE username like '$username';";
+        $resultado_user = mysqli_query($mysqli,$sql_conferir_user);
+        $linhas_user = mysqli_num_rows($resultado_user);
+            if($linhas_user != 0){
+                echo "<script type='text/javascript'>alert('O username já está sendo utilizado');</script>";
+                echo "<br><br><a href='cadastro.php'>Volte para o cadastro</a>"; 
+                $erro = 1;
+            }
         // VERIFICA SE NÃO HOUVE ERRO 
         if($erro == 0) {
             $senha_cript = password_hash($senha, PASSWORD_DEFAULT);

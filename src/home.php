@@ -30,7 +30,6 @@ $cod_usuario = $_SESSION["cod_usuario"];
                 </div>
 
                 <ul class= "nav-list">
-                    <li><a href="/">Início</a></li>
                     <li><a href="buscausuario.php">Buscar usuário</a></li>
                     <li><a href="ALTERA.php">Alterar conta</a></li>
                     <li><a href="logout.php">Logout</a></li>

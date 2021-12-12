@@ -31,8 +31,28 @@
                     ?>
         <html>
                     <link rel='stylesheet' href="post.css">
-                    <body>
-                        <div class="post">    
+                    <body>      
+                        <div class="post" >
+                                <form method="POST">
+                                    <input type="hidden" name="operacao" value="curtir">
+                                    <input type="hidden" name="cod_post" value="<?php echo $posts['id_post']; ?>">
+                                    <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario; ?>">
+                                    <?php
+                                        $cod_postagem = $posts['id_post'];
+                                        $sql = "SELECT * FROM curtidas WHERE cod_usuario = $cod_usuario AND cod_postagem = $cod_postagem;";
+                                        $rescoment2 = mysqli_query($mysqli,$sql);
+                                        $curtida = mysqli_fetch_array($rescoment2);
+
+                                        $url = $_SERVER["REQUEST_URI"];
+
+                                        if($cod_usuario == $curtida['cod_usuario'] && $posts['id_post'] == $curtida['cod_postagem']){
+                                            echo "<input class='btn btn-block btn-sm btn-danger' type='submit' value='Descurtir'><br>";
+                                        }else{
+                                            echo "<input class='btn btn-block btn-sm btn-success' type='submit' value='Curtir'><br>";
+                                        }
+                                    ?>
+                                   <input type="hidden" name="url" value="<?php echo $url; ?>">
+                                </form>    
                                 <p class="postagem"><?php echo $posts["post"]."<br>";?></p>
                                         <div class="comments">
                                                 <p class="titulo-comentario">Comentários</p>
@@ -43,7 +63,13 @@
                                                         <input type="hidden" name="cod_postagem" value="<?php echo $posts['id_post'] ?>">
                                                         <textarea  id="comentario" name="comentario"  placeholder="Comente aqui..." type="text" rows="2"></textarea>
 
-                                                        <button type="submit" class="btnSubmitForm">Publicar</button>
+                                                        <button type="submit" class="btnSubmitForm">Publicar</button><br>
+                                                </form>
+                                                <form action="comment.php" method="POST">
+                                                        <input type="hidden" name="operacao" id="operacao" value="mostcoment">
+                                                        <input type="hidden" name="cod_usuario" value="<?php echo $cod_usuario?>">
+                                                        <input type="hidden" name="id_post" value="<?php echo $posts['id_post'] ?>">
+                                                        <button type="submit">Mostrar Comentários!</button><br><br>
                                                 </form>
                                         </div>        
                         </div>
@@ -51,6 +77,37 @@
         <html>
 <?php
                }
-                mysqli_close($mysqli);
         }
+        elseif($operacao == "curtir"){
+
+                $url = $_POST["url"];
+                $cod_usuario = $_POST["cod_usuario"];
+                $cod_postagem = $_POST["cod_post"];
+                
+                $sql = "SELECT * FROM curtidas WHERE cod_usuario = $cod_usuario AND cod_postagem = $cod_postagem;";
+                $res = mysqli_query($mysqli,$sql);
+                $curtida = mysqli_fetch_array($res);
+
+                if($cod_usuario == $curtida['cod_usuario'] && $cod_postagem == $curtida['cod_postagem']){
+                
+                        $sql = "DELETE FROM `curtidas` WHERE `curtidas`.`cod_postagem` = $cod_postagem AND `curtidas`.`cod_usuario` = $cod_usuario;";
+                        mysqli_query($mysqli,$sql);
+
+                        echo "<a href='home.php'>VOLTAR</a>";
+                        //header ("Location: ".$url);
+
+                }else{
+
+                        $sql = "INSERT INTO curtidas (cod_usuario,cod_postagem)";
+                        $sql .= "VALUES ('$cod_usuario','$cod_postagem');";  
+                        mysqli_query($mysqli,$sql);
+
+                        echo "<a href='home.php'>VOLTAR</a>";
+                        //header ("Location: ".$url);
+
+                }     
+        }
+        
+        mysqli_close($mysqli);
+
 ?>
