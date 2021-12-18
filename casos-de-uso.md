@@ -2,19 +2,21 @@
 
   ## Lista dos Casos de Uso
 
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS DE CASOS DE USO
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR POSTAGEM
-  - FLUXOS PRINCIPAIS E ALTERNATVOS PARA EXCLUIR PUBLICAÇÃO
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXIBIR A TIMELINE DO USUÁRIO 
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA CURTIR
-  - FLUXOS PRINCIPAIS E ALTERNATIVOS PARA FAZER COMENTÁRIO
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS DE CASOS DE USO]()
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT]()
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO]()
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR POSTAGEM]()
+  - [FLUXOS PRINCIPAIS E ALTERNATVOS PARA EXCLUIR PUBLICAÇÃO]()
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXIBIR A TIMELINE DO USUÁRIO]()
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA CURTIR]()
+  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA FAZER COMENTÁRIO]()
 
   ## Lista dos Atores
 
-  - Cras tempor
-  - Donec a lorem
+  - Larissa Nascimento
+  - Krislaine Mendes
+  - Rafhael 
+  - Kailane
 
   ## Diagrama de Casos de Uso
 
@@ -23,7 +25,7 @@
 
   ## Descrição dos Casos de Uso
 
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS DO CASO-DE-USO
+  ### FLUXOS PRINCIPAIS E ALTERNATIVOS DO CASO DE USO
 
 
   **Fluxo Principal**
@@ -145,10 +147,12 @@
   2. O sistema não encontra o usuário 
   3. O autor atualiza a rede social e faz o mesmo procedimento do fluxo principal
 
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA CURTIR
-
-  **Fluxos Principais**
-
   ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA FAZER COMENTARIO
 
   **Fluxos principais**
+
+  1. O usuario quando for visualizar o comentario
+  2. Aparecerá uma caixa
+  3. O usuario deverá clicar em cima da caixa
+  4. O usuario poderá escrever o que deseja 
+  5. O autor clica em comentar.

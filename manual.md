@@ -7,8 +7,8 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
  - [Cadastro](#Cadastro)
  - [Login](#Login)
  - [Home](#Home)
- - [Busca de usuários](#Busca de usuário)
- - [Atualizar usuário](#Atualizar usuário)
+ - [Busca-de-usuários](#Busca de usuário)
+ - [Atualizar-usuário](#Atualizar usuário)
  - [Comentários](#Comentários)
 
 ## Cadastro
