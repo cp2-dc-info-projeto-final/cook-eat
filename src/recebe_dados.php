@@ -59,7 +59,7 @@
         for($i=0; $i < $linhas; $i++){
             $usuario = mysqli_fetch_array($res);
             echo "<strong>Username:</strong> ".$usuario["username"]."<br>";
-            echo "<strong>Senha:</strong> ".$usuario["senha_cript"]."<br>";
+            
             echo "<strong>Email:</strong> ".$usuario["email"]."<br>";
             echo "<a href='alteraadm.php?cod_usuario=".$usuario["cod_usuario"]."'>Alterar usuário</a><br>";
             echo "<a href='deletar.php?cod_usuario=".$usuario["cod_usuario"]."'>Deletar</a><br><br>";
@@ -76,7 +76,6 @@
         for($i=0; $i < $linhas; $i++){
             $usuario = mysqli_fetch_array($res);
             echo "<strong>Username:</strong> ".$usuario["username"]."<br>";
-            echo "<strong>Senha:</strong> ".$usuario["senha_cript"]."<br>";
             echo "<strong>Email:</strong> ".$usuario["email"]."<br>";
             echo "<a href='alteraadm.php?cod_usuario=".$usuario["cod_usuario"]."'>Alterar usuário</a><br><br>";
             echo "<a href='deletar.php?cod_usuario=".$usuario["cod_usuario"]."'>Deletar</a><br><br>";
