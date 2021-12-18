@@ -24,6 +24,10 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `cookeat` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `cookeat`;
 
+
+DROP USER IF EXISTS 'loga'@'localhost';
+CREATE USER 'loga'@'localhost' IDENTIFIED BY '123';
+GRANT ALL PRIVILEGES ON cookeat.* TO 'loga'@'localhost';
 -- --------------------------------------------------------
 
 --
