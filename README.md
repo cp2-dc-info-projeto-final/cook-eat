@@ -25,5 +25,6 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados]![bd drawio](https://user-images.githubusercontent.com/55742499/146659502-6187e6fa-be66-45d3-80c7-c8757093639b.png)
+![Diagrama de Banco de Dados]![bd drawio (1)](https://user-images.githubusercontent.com/55742499/146659585-392a0b87-bf30-4d8a-a34d-027debcdd058.png)
+
 
