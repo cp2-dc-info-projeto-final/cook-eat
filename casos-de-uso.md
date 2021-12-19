@@ -13,10 +13,8 @@
 
   ## Lista dos Atores
 
-  - Larissa Nascimento
-  - Krislaine Mendes
-  - Rafhael 
-  - Kailane
+  - Administrador
+  - Usuário
 
   ## Diagrama de Casos de Uso
 
