@@ -10,6 +10,7 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
  - [Busca-de-usuários](#Busca de usuário)
  - [Atualizar-usuário](#Atualizar usuário)
  - [Comentários](#Comentários)
+ - [Administrador](#Administrador)
 
 ## Cadastro
 
@@ -55,4 +56,16 @@ Aqui vocês poderão comentar nas publicações de outros usuários:
 ![comentário na publicação](https://user-images.githubusercontent.com/55742499/145693197-83f82c89-0a89-47da-907c-2e5f6db91a2d.jpg)
 
 
+## Concedimento do ADM
+  
+  Aqui é onde algum administrador concede adm para outro usuário
+   
+ ![concedimento do adm a alguém](https://user-images.githubusercontent.com/55742499/146660501-a4e338f8-9642-4f67-a0d4-59edbaa88a81.jpg)
+
+
+## Acesso do ADM
+
+Aqui é onde fica o Acesso do ADM
+
+![Acesso do adm](https://user-images.githubusercontent.com/55742499/146660560-9f76adfd-0e1a-424d-8830-75ce7740683e.jpg)
 
