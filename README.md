@@ -21,7 +21,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 **Diagrama de Classes**
 
-![Diagrama de Classes]![diagrama-exemplo drawio](https://user-images.githubusercontent.com/55742499/146659480-04b1e922-f051-4303-86ed-3f2ec04692d2.png)
+![diagrama-exemplo drawio](https://user-images.githubusercontent.com/55742499/146659480-04b1e922-f051-4303-86ed-3f2ec04692d2.png)
 
 **Modelagem do Banco de Dados**
 
