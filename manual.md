@@ -10,7 +10,8 @@ Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lis
  - [Busca-de-usuários](#Busca de usuário)
  - [Atualizar-usuário](#Atualizar usuário)
  - [Comentários](#Comentários)
- - [Administrador](#Administrador)
+ - [Concedimento do ADM](#Concedimento do ADM)
+ - [Acesso do ADM](#Acesso do ADM) 
 
 ## Cadastro
 
