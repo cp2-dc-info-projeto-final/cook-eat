@@ -1,6 +1,6 @@
 # Manual do Usuário
 
-Prezado usuário, agradecemos a escolha da nossa rede social. Segue abaixo a lista de nossas funcionalidades.
+Bem-vindo ao Manual CookEat! Esse é um pequeno manual sobre as funcionalidades do site e como usá-las para que tenha a melhor experiência possivel em nosso site! As Funcionalidades estão divididas em tópicos e categorias para melhor entendimento. Lembre-se: Seja respeitoso, e então, desfrute da plataforma.
 
 **Lista das Funcionalidades de usuário:**
 
