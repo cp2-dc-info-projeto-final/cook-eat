@@ -43,7 +43,7 @@ Após o preenchimento, o site retornará para a página inicial caso não haja e
 
 Se houver algum erro de cadastro, o site te redirecionará para a página de Feedback indicando o erro. Clique em "Voltar" para retornar à página de cadastro.
 
-![Realizar Cadastro](imagens-do-manual/cadastro_1.png)
+![Realizar Cadastro](imagens-do-manual/cadastro_2.png)
 
 
 
@@ -71,7 +71,7 @@ Para encerrar sua sessão, clique no botão "Logout", localizado na barra de nav
 
 Ao clicar, o site abrirá uma caixa de diálogo pedindo a confirmação do Logout. Clique em "Ok" para confirmar ou "Cancelar" para impedir o encerramento da sessão. Caso escolha a opção "Ok", o site retornará para a página de login e, caso escolha a opção "Cancelar", o site permanecerá na página atual.
 
-![Efetuar Logout](imagens-do-manual/logout_1.png)
+![Efetuar Logout](imagens-do-manual/Logout_1.png)
 
 
 
