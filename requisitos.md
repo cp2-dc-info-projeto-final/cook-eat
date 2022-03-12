@@ -5,31 +5,31 @@
 
 ### RF 01
 
-O sistema deverá ser capaz de armazenar o nome, email, data de nascimento e breve descrição de cada usuário.
+O sistema deverá ser capaz de armazenar username, senha e email de cada usuário e administrador.
 
 ### RF 02
 
-O sistema deverá ser capaz de fornecer o nome, email, data de nascimento e breve descrição de cada usuário.
+O sistema deverá ser capaz de buscar usuários por meio de uma chave de busca.
 
 ### RF 03
 
-O sistema deverá ser capaz de armazenar cada mídia postada pelo usuário.
+O sistema deverá ser capaz de exibir postagens de usuários na forma de uma timeline.
 
 ### RF 04
 
-O sistema deverá ser capaz de exibir cada mídia postada pelo usuário.
+O sistema deverá ser capaz de exibir comentários referentes a uma postagem.
 
 ### RF 05
 
-O sistema deverá ser capaz de permitir a interação de demais usuários à uma postagem: curtidas e comentários.
+O sistema deverá ser capaz de permitir que usuários incluam, excluam e alterem suas postagens.
 
 ### RF 06
 
-O sistema deverá ser capaz de armazenar e exibir a quantidade de interações em uma postagem.
+O sistema deverá ser capaz de permitir ao usuário curtir postagens e/ou comentários.
 
 ### RF 07
 
-O sistema deverá ser capaz de localizar usuários por meio de uma chave de acesso.
+O sistema deverá ser capaz de permitir ao usuário incluir, excluir e alterar seus comentários.
 
 ## Requisitos Não-Funcionais
 
@@ -47,8 +47,20 @@ O sistema deverá ser desenvolvido na linguagem de programação PHP.
 
 ### RNF 04
 
-O sistema deverá ser desenvolvido utilizando frameworks como o Bootstrap
+O sistema deverá ter sua estilização feita em CSS e JavaScript.
 
 ### RNF 05
 
-O sistema deverá ser desenvolvido para o também acesso, via navegação web, se smartphones ou tablets.
+O sistema deverá ser desenvolvido na linguagem HTML.
+
+### RNF 06
+
+O sistema deverá utilizar padrões internacionais de acessibilidade.
+
+### RNF 07
+
+O sistema deverá possuir sessões que controlem as ações dos usuários por meio de propriedades do PHP
+
+### RNF 08
+
+O sistema deverá ser desenvolvido com base no protocolo HTTP
