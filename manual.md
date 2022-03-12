@@ -175,7 +175,7 @@ Após o preenchimento, o site abrirá uma caixa de diálogo pedindo a confirmaç
 ![Editar Usuário](imagens-do-manual/editar_usuario_4.png)
 
 
-CCaso haja erros de cadastro, o sistema os indicará na página de Feedback. Clique em "Voltar" para retornar à página "Home".
+Caso haja erros de cadastro, o sistema os indicará na página de Feedback. Clique em "Voltar" para retornar à página "Home".
 
 ![Editar Usuário](imagens-do-manual/editar_usuario_3.png)
 
@@ -183,11 +183,47 @@ CCaso haja erros de cadastro, o sistema os indicará na página de Feedback. Cli
 
 ### Promover Usuário
 
+No perfil do usuário desejado, clique no botão "promover", localizado próximo aos botões "excluir usuário" e "alterar dados". O sistema abrirá uma caixa de diálogo pedindo a confirmação da ação. Clique em "Ok" para continuar ou "Cancelar" para permanecer na página. 
+
+![Promover Usuário](imagens-do-manual/perfil_1.png)
+
+![Promover Usuário](imagens-do-manual/promover_usuario_1.png)
+
+
+Ao clicar em "Ok", o sistema recarrega a página e o usuário é promovido a administrador.
+
+![Promover Usuário](imagens-do-manual/promover_usuario_2.png)
+
 
 
 ### Rebaixar Administrador
+
+No perfil do administrador desejado, clique no botão "rebaixar", localizado próximo aos botões "excluir usuário" e "alterar dados". O sistema abrirá uma caixa de diálogo pedindo a confirmação da ação. Clique em "Ok" para continuar ou "Cancelar" para permanecer na página. 
+
+![Rebaixar Administrador](imagens-do-manual/promover_usuario_2.png)
+
+![Rebaixar Administrador](imagens-do-manual/rebaixar_usuario_1.png)
+
+
+Ao clicar em "Ok", o sistema recarrega a página e o administrador é rebaixado a usuário.
+
+![Rebaixar Administrador](imagens-do-manual/perfil_1.png)
 
 
 
 ### Excluir Usuário
 
+No perfil do usuário desejado, clique no botão "excluir usuário", localizado próximo aos botões "promover"/"rebaixar" e "alterar dados". O sistema abrirá uma caixa de diálogo pedindo a confirmação da ação. Clique em "Ok" para continuar ou "Cancelar" para permanecer na página. 
+
+![Excluir Usuário](imagens-do-manual/perfil_1.png)
+
+![Excluir Usuário](imagens-do-manual/excluir_1.png)
+
+
+Ao clicar em "Ok", o sistema te redirecionará para a página de Feedback, indicando que o usuário foi removido com sucesso. Clique no botão "Voltar ao Início" para retornar à página "Home".
+
+![Excluir Usuário](imagens-do-manual/excluir_2.png)
+
+
+
+.
