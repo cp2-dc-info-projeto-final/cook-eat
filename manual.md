@@ -53,7 +53,7 @@ Na página primeira, preencha os campos Username e Senha. Após o preenchimento,
 
 ![Efetuar Login](imagens-do-manual/login_1.png)
 
-![Efetuar Login](imagens-do-manual/login_3.png)
+![Efetuar Login](imagens-do-manual/home_1.png)
 
 
 Se houver algum erro de login, o site te redirecionará para a página de Feedback indicando o erro. Clique em "Voltar" para retornar à página de cadastro.
@@ -64,9 +64,34 @@ Se houver algum erro de login, o site te redirecionará para a página de Feedba
 
 ### Efetuar Logout (Encerrar Sessão)
 
+Para encerrar sua sessão, clique no botão "Logout", localizado na barra de navegação (Isso pode ser feito em qualquer página do site).
+
+![Efetuar Logout](imagens-do-manual/navbar_1.png)
+
+
+Ao clicar, o site abrirá uma caixa de diálogo pedindo a confirmação do Logout. Clique em "Ok" para confirmar ou "Cancelar" para impedir o encerramento da sessão. Caso escolha a opção "Ok", o site retornará para a página de login e, caso escolha a opção "Cancelar", o site permanecerá na página atual.
+
+![Efetuar Logout](imagens-do-manual/logout_1.png)
+
 
 
 ### Fazer Postagem
+
+Para fazer uma postagem, clique no botão "Início", localizado na barra de navegação (Isso pode ser feito em qualquer página do site).
+
+![Fazer Postagem](imagens-do-manual/navbar_1.png)
+
+
+Escreva o texto que deseja postar na seção "Bem Vindo, *seu nome de usuário*!". Após terminar de escrever, clique em "Publicar". O site te redirecionará para a página de Feedback, indicando que a postagem foi efetuada com sucesso. Clique em "Voltar" para retornar à página "Home".
+
+![Fazer Postagem](imagens-do-manual/home_1.png)
+
+![Fazer Postagem](imagens-do-manual/postar_2.png)
+
+
+Caso haja erros de postagem, o sistema os indicará na página de Feedback. Clique em "Voltar" para retornar à página "Home".
+
+![Fazer Postagem](imagens-do-manual/postar_1.png)
 
 
 
