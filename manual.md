@@ -21,6 +21,10 @@ Bem-vindo ao Manual CookEat! Esse é um pequeno manual sobre as funcionalidades 
  - [Rebaixar Administrador](#Rebaixar-Administrador)
  - [Excluir Usuário](#Excluir-Usuário)
 
+## Funcionalidades de Usuário
+
+
+
 ### Início 
 
 o site abrirá a página para que você possa iniciar sessão ou efetuar cadastro
