@@ -27,7 +27,7 @@ Bem-vindo ao Manual CookEat! Esse é um pequeno manual sobre as funcionalidades 
 
 ### Início 
 
-o site abrirá a página para que você possa iniciar sessão ou efetuar cadastro
+o site abrirá a página para que você possa, caso esteja cadastrado, iniciar sessão ou, caso não, efetuar cadastro.
 
 ![Inicio](imagens-do-manual/início_1.png)
 
@@ -35,9 +35,30 @@ o site abrirá a página para que você possa iniciar sessão ou efetuar cadastr
 
 ### Realizar Cadastro
 
+Clique em "Cadastre-se" na página inicial. O site te redirecionará para a página de cadastro, onde você deverá preencher os campos Username, Email, Senha e Confirmar senha.
+Após o preenchimento, o site retornará para a página inicial caso não haja erros. 
+
+![Realizar Cadastro](imagens-do-manual/cadastro_1.png)
+
+
+Se houver algum erro de cadastro, o site te redirecionará para a página de Feedback indicando o erro. Clique em "Voltar" para retornar à página de cadastro.
+
+![Realizar Cadastro](imagens-do-manual/cadastro_1.png)
+
 
 
 ### Efetuar Login (Iniciar Sessão)
+
+Na página primeira, preencha os campos Username e Senha. Após o preenchimento, o site te redirecionará para a página "Home" caso não haja erros.
+
+![Efetuar Login](imagens-do-manual/login_1.png)
+
+![Efetuar Login](imagens-do-manual/login_3.png)
+
+
+Se houver algum erro de login, o site te redirecionará para a página de Feedback indicando o erro. Clique em "Voltar" para retornar à página de cadastro.
+
+![Efetuar Login](imagens-do-manual/login_2.png)
 
 
 
