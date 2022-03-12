@@ -29,6 +29,8 @@ Bem-vindo ao Manual CookEat! Esse é um pequeno manual sobre as funcionalidades 
 
 o site abrirá a página para que você possa iniciar sessão ou efetuar cadastro
 
+![Início](imagens do manual/início_1.png)
+
 
 
 ### Realizar Cadastro
