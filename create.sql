@@ -21,6 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `cookeat`
 --
+DROP DATABASE IF EXISTS `cookeat`;
 CREATE DATABASE IF NOT EXISTS `cookeat` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `cookeat`;
 
