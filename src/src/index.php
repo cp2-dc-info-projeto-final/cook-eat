@@ -1,5 +1,6 @@
 <html>
     <head>
+    <?php include "autenticadeslogado.inc" ?>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
@@ -10,7 +11,7 @@
 
     <body>
         
-        <form action="php/login.php" method="POST">
+        <form action="login.php" method="POST">
             <h2><img src="assets/img/logo.png" width="65">COOKEAT</h2>
             <br>
             <p>Username: <input type="text" name="username" size="10" placeholder="Digite seu username..." > </p><br>
@@ -18,7 +19,7 @@
             <br>
             <p><input type="submit" value="Enviar" ></p> 
             <br><hr><br>
-            <a class="btn" href="cadastro.php" font="Poppins" >Ainda não é cadastrado?</a>
+            <a class="btn" href="cadastro.php" font="Poppins" >  &nbsp;  Cadastre-se   &nbsp; </a>
         </form>
     
     </body>

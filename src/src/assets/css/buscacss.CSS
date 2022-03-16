@@ -1,7 +1,6 @@
 body{
-    padding: 0;
-    margin: 0;
-    background: #830931;
+    background: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+    font-family: 'Poppins', sans-serif;
 }
 .logo{
     font-size: 24px;
@@ -13,7 +12,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(-45deg,  #ffce51, #ff7253, #fd5754)	 ;
+    background: white	 ;
     height: 8vh;
 }
 a{
@@ -113,7 +112,7 @@ a:hover  {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #353b48;
+    background: white;
     height: 40px;
     border-radius: 40px;
     padding: 10px;
@@ -125,7 +124,7 @@ a:hover  {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #353b48;
+    background: white;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +137,7 @@ a:hover  {
     outline: none;
     float: left;
     padding: 0;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;

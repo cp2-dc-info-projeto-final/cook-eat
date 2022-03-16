@@ -1,0 +1,1 @@
+<a href="deleteuser.php?cod_usuario=<?php echo $cod_usuario; ?>" onclick="if (!confirm('Tem certeza de que deseja excluir o usuário?')) return false;"> <button style="cursor: pointer; font-family: 'Poppins', sans-serif; background: red; color: white; border: 0; border-radius: 20px; width: 100px; height: 30px"> excluir usuário </button> </a>&nbsp;&nbsp;

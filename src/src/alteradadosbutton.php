@@ -1,0 +1,1 @@
+<a href="altera_dados_adm.php?cod_usuario=<?php echo $cod_usuario ?>"> <button style="cursor: pointer; font-family: 'Poppins', sans-serif; background: rgb(112, 185, 2); color: white; border: 0; border-radius: 20px; width: 100px; height: 30px"> alterar dados </button> </a>&nbsp;&nbsp;

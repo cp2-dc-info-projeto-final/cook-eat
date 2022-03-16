@@ -1,4 +1,4 @@
-<?php  include "autentica.inc" ?> 
+<?php  include "autenticaadm.inc" ?> 
 
 
 <html>
@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/47e36a68f2.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href="assets/css/buscacss.CSS">
-    <title>Buscar usuários</title>
+    <title>Exibir Usuários</title>
     </head>
     <style>
         body{
@@ -42,22 +42,14 @@
             include "conexao.php";
             echo "<br><br><br><br><br><br>";
             
-
-            
-                $username = $_POST["username"];
-                $sql = "SELECT * FROM usuarios WHERE username like '%$username%';";
+                $sql = "SELECT * FROM usuarios;";
                 $res = mysqli_query($mysqli,$sql);
                 $linhas = mysqli_num_rows($res);
                 for($i=0; $i < $linhas; $i++){
                     $usuario = mysqli_fetch_array($res);
                     
-                        if($_SESSION["adm"] == 1){
                             include("exibir_usuario_card_adm.php");
-                        }else{
-                            include("exibir_usuario_card.php");
-                        }
-                    
-                
+                        
                 }
                 mysqli_close($mysqli);
             ?>

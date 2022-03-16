@@ -1,3 +1,4 @@
+<?php include "autenticadeslogado.inc" ?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,7 +14,7 @@
     
     <body>
         <div id="form">
-            <form action="php/recebe_dados.php" method = "POST">
+            <form action="recebe_dados.php" method = "POST">
                 <input type="hidden" name="operacao" id="operacao" value="inserir">
                 <h2 class="title">Cadastrar</h2>
                 <label for="username">Username</label>
