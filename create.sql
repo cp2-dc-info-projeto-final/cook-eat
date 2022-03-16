@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Dez-2021 às 03:06
--- Versão do servidor: 10.1.38-MariaDB
--- versão do PHP: 7.3.2
+-- Generation Time: 13-Mar-2022 às 00:36
+-- Versão do servidor: 5.7.17
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -110,7 +110,10 @@ INSERT INTO `posts` (`id_post`, `cod_autor`, `post`) VALUES
 (13, 16, 'olÃ¡\r\n'),
 (14, 28, 'oi'),
 (15, 28, 'diretinho'),
-(16, 28, 'teste');
+(16, 28, 'teste'),
+(22, 29, 'postei mane'),
+(23, 29, 'alface'),
+(24, 33, 'postagem do usuÃ¡rio');
 
 -- --------------------------------------------------------
 
@@ -121,9 +124,9 @@ INSERT INTO `posts` (`id_post`, `cod_autor`, `post`) VALUES
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `usuarios` (
   `cod_usuario` int(11) NOT NULL,
-  `username` varchar(10) NOT NULL,
+  `username` varchar(16) NOT NULL,
   `senha_cript` varchar(255) NOT NULL,
-  `email` varchar(30) NOT NULL,
+  `email` varchar(60) NOT NULL,
   `adm` tinyint(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -132,12 +135,13 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`cod_usuario`, `username`, `senha_cript`, `email`, `adm`) VALUES
-(16, 'Rafhs', '$2y$10$aBaAOmQzzbqH2156xs9qt.Q1Py0BnXxniY8CNbOAuw.QLf93PZmeq', 'rafhael.pimentel.rj@gmail.com', 1),
+(16, 'Rapael', '$2y$10$Nli4WbozQwfCHA.BU7s0Q.5HGKNXYSURMssdblA5L6/UQldRT66Ri', 'rafhael.rapael@cp2.edu.br', 0),
 (24, 'clecio', '$2y$10$54P2N91it/cK52Bmy4nBTOkiOBXPduwdGy5teOF7lo4l9hp2jCHIi', 'rafhael.pimentel.rj@gmail.com', 0),
 (25, 'JosÃ©', '$2y$10$OWM47RnDbzeLSgypfYaz0u1qETZCjxeiEjRZaohgYzzvwSFXGBBrC', 'rafhael.pimentel.rj@gmail.com', 1),
 (26, 'geovanna', '$2y$10$S3YoF5cO47URi897w37PfueuCb4KSxnTR5akRXXqj2x0ouBZaeAXa', 'geovanna@gmail.com', 0),
 (27, 'Daisy', '$2y$10$3T5fIdXGDZICMGONY8uJWuj1bx.F0NYtROkvbQErTPBP9iHX8n/eW', 'daisy@gmail.com', 0),
-(28, 'teste', '$2y$10$l.uMHYjIHT7P7cZQof4eRuXR5juvVyPk1ZAYKtG9I/1Dmbbo7P4za', 'teste@123.com', 0);
+(28, 'teste', '$2y$10$l.uMHYjIHT7P7cZQof4eRuXR5juvVyPk1ZAYKtG9I/1Dmbbo7P4za', 'teste@123.com', 0),
+(34, 'administrador', '$2y$10$ix5pSJ2JZq3bCcSG.bm6YuJuHWEQy9jlgi9le76RltxV4WKgJVOni', 'administrador@gmail.com', 1);
 
 --
 -- Indexes for dumped tables
@@ -176,25 +180,21 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `comment`
   MODIFY `cod_coment` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT for table `curtidas`
 --
 ALTER TABLE `curtidas`
   MODIFY `cod_curtida` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `cod_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-COMMIT;
+  MODIFY `cod_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
