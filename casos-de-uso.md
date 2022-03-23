@@ -2,14 +2,30 @@
 
   ## Lista dos Casos de Uso
 
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS DE CASOS DE USO]()
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT]()
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO]()
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR POSTAGEM]()
-  - [FLUXOS PRINCIPAIS E ALTERNATVOS PARA EXCLUIR PUBLICAÇÃO]()
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXIBIR A TIMELINE DO USUÁRIO]()
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA CURTIR]()
-  - [FLUXOS PRINCIPAIS E ALTERNATIVOS PARA FAZER COMENTÁRIO]()
+ - [CDU 01](#CDU-01): Efetuar Login
+ - [CDU 02](#CDU-02): Cadastro de usuários 
+ - [CDU 03](#CDU-03): Efetuar Logout
+ - [CDU 04](#CDU-04): Alterar cadastro
+ - [CDU 05](#CDU-05): Listar usuários
+ - [CDU 06](#CDU-06): Editar usuários
+ - [CDU 07](#CDU-07): Buscar usuários 
+ - [CDU 08](#CDU-08): Excluir Usuário 
+ - [CDU 09](#CDU-09): Conceder Privilégios de Admnistrador
+ - [CDU 10](#CDU-10): Retirar Privilégios de Admnistrador 
+ - [CDU 11](#CDU-11): Criar Postagem
+ - [CDU 12](#CDU-12): Editar Postagem
+ - [CDU 13](#CDU-13): Excluir Postagem
+ - [CDU 14](#CDU-14): Exibir Timeline
+ - [CDU 15](#CDU-15): Excluir Postagem como administrador
+ - [CDU 16](#CDU-16): Criar Comentário
+ - [CDU 17](#CDU-17): Editar Comentário
+ - [CDU 18](#CDU-18): Excluir Comentário
+ - [CDU 19](#CDU-19): Exibir Comentário Na Timeline
+ - [CDU 20](#CDU-20): Curtir Postagem
+ - [CDU 21](#CDU-21): Curtir Comentário
+ - [CDU 22](#CDU-22): Remover Curtida de Postagem
+ - [CDU 23](#CDU-23): Remover Curtida de Comentário 
+ - [CDU 24](#CDU-24): Excluir Comentário como admnistrador
 
   ## Lista dos Atores
 
@@ -23,134 +39,302 @@
 
   ## Descrição dos Casos de Uso
 
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS DO CASO DE USO
-
-
-  **Fluxo Principal**
-
-  1. O sistema apresenta um formulário com os campos username e senha 
-  2. O usuário insere seu username e sua senha e clica no botão “Enviar” 
-  3. O sistema valida o username e a senha do usuário
-  4. O sistema encaminha o usuário para sua tela inicial 
-
-  **Fluxo Alternativo A**
-  1. O sistema apresenta um formulário com os campos username e senha
-  2. O usuário insere seu username e sua senha e clica no botão “Enviar”
-  3. O sistema informa que ousername é invalido 
-  4. O usuário corrige as informações de username e senha e clica no botão “Enviar”
-  5. O sistema encaminha o usuário para sua tela inicial
-
-  **Fluxo Alternativo B**
-
-  1. O sistema apresenta um formulário com os campos username e senha 
-  2. O usuário clica no botão “Ainda não é cadastrado?” 
-  3. O usuário informa username, e-mail, senha e confirmar senha através de um formulário e clica em “Cadastrar” 
-  4. O sistema válida e encaminha para a pagina de login 
-    
-    
-  **Fluxo Alternativo C**
-
-  1. O sistema apresenta um formulário para a realização de cadastro
-  2. O usuário insere informações inválida
-  3. O sistema não reconhece o login e encaminha o usuário para uma página que contém os requisitos necessários para efetuar o cadastro
-
-
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS DE LOGOUT
-
-  **Fluxo Principal** 
-
-  1. O sistema apresenta uma barra de navegação
-  2. O usuário clica em “Logout"
-  3. O sistema válida o logout
-  4. O sistema encaminha para a tela de login
-
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR USUÁRIO
+  ### CDU 01
+  
+  Efetuar login 
 
   **Fluxo Principal**
 
-  1. O sistema apresenta uma barra de navegação na parte superior da tela 
-  2. O usuário clica em “Alterar conta"
-  3. O sistema abre uma solicitação de edição de usuário com a opção de username, senha atual , senha nova, repetir a senha nova e e-mail
-  4. O usuário troca a senha  e clica em "Enviar!
-  5. O sistema atualiza a senha e encaminha o usuario para uma pagina com o link para efetuar o login
-
-  **Fluxo Alternativo A**
-
-  1. O sistema apresenta uma barra de navegação no canto superior da tela
-  2. O usuário clica em “Alterar conta”
-  3. O sistema abre uma solicitação de edição de usuário com a opção de “nome” e “senha”
-  4. O usuário troca o nome e clica em salvar
-  5. O sistema troca para o novo nome
-  6. O sistema valida e encaminha para a tela inicial
+  1. O sistema apresenta um formulario com os campos "Username" e "Senha".
+  2. O usuário preenche os campos e clica no botão "Enviar".
+  3. O sistema valida as informações do usuário.
+  4. O sistema encaminha o usuário para a home.
+  5. Ao logar é feita uma autenticação do usuário para saber se o usuário é moderador.
 
 
 
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EDITAR A POSTAGEM
+  ### CDU 02
 
+  Cadastro de usuários 
+
+  1. O sistema apresenta um formulário com os campos Username;Email;Senha;Confirmar Senha;.
+  2. O usuário preenche todos os campos e clica no botão "Cadastrar".
+  3. O sistema valida as informações do usuário.
+  4. O sistema encaminha o usuário para a próxima tela, na qual informa que os dados foram digitados corretamente e o usuário foi cadastrado e com o botão de voltar    para o login.
+
+  ### CDU 03
+
+  Efetuar Logout
+
+  **Fluxo Principal**
+
+  1. O usuário clica no botão "Logout" na barra de navegação.
+  2. O usuário é redirecionado para a página de login.
  
-  **Fluxo principal** 
+ ### CDU 04
 
-  1. Ao clicar na barra de navegação o sistema apresenta um botão escrito “Administração” 
-  2. O sistema permite o acesso ao autor 
-  3. O usuário escolhe a opção de editar a publicação  
-  4. O administrador altera a postagem e salva  
-  5. O sistema atualiza a publicação  
+Alterar cadastro
 
- 
- **Fluxos Alternativos A** 
- 
-  1. O usuário aperta em salvar  
-  2. O sistema não lê o comando e a publicação não salva  
-  3. O usuário atualiza a página e faz o mesmo procedimento do fluxo principal   
+**Fluxo Principal**
 
- 
- ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXCLUIR A POSTAGEM  
-
- 
-  **Fluxo principal** 
-
-  1. O sistema apresenta uma barra de navegação  
-  2. Ao clicar na barra de navegação o sistema apresenta um botão escrito “Administração” 
-  3. O sistema permite o acesso ao autor e ao administrador   
-  4. O usuário escolhe a opção de excluir postagem 
-  5. O sistema lê o comando e a publicação some do feed e do perfil do autor 
-
- 
-  **Fluxo Alternativo A**
-
-  1. O usuário aperta em excluir  
-  2. O sistema não lê o comando e a publicação não é removida da rede social 
-  3. O usuário atualiza a página e faz o mesmo procedimento do fluxo principal  
-
-     
-
- ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA EXIBIR A TIMELINE DO USUÁRIO 
-      
-  **Fluxo principal** 
-
-  1. O usuário clica na barra de navegação e o sistema apresenta um ícone de pesquisas 
-  2. Ao clicar para pesquisar, o  usuário vai inserir a palavra chave do perfil que ela deseja encontrar 
-  3. Realizado a busca, o autor vai encontrar todas as postagens do usuário na rede social. 
+1. O usuário na página "Home" clica em "Alterar Conta" e é redirecionado a página de alteração de usuário.
+2. O sistema apresenta um formulário com os campos Username; Senha atual; Senha nova; Repita a senha nova; E-mail;.
+3. O sistema válida as informações do usuário.
+4. O usuário é redirecionado para a "Home".
 
 
-  **Fluxo alternativo A**
+### CDU 05
 
-  1. O usuário vai tentar realizar a busca 
-  2. E a palavra chave não vai está correta 
-  3. O sistema vai da opções de perfis com a palavra chave pesquisada 
+Listar usuários
 
-  **Fluxo Alternativo B**
+**Fluxo Principal**
 
-  1. O usuário vai tentar realizar a busca com a palavra chave
-  2. O sistema não encontra o usuário 
-  3. O autor atualiza a rede social e faz o mesmo procedimento do fluxo principal
+1. Caso o usuário seja administrador, dentro da página "Home", irá aparecer o seguinte botão na barra de navegação "Administração"
+2. O moderador clica em "Mostrar usuários".
+3. O sistema redireciona o moderador para a página que exibe os usuários cadastrados.
+4. O moderador tem acesso aos perfis de usuários com o botão "Editar usuário" para cada respectivo usuário.
+5. O moderador tem acesso aos perfis de usuários com o botão "Deletar usuário" para cada respectivo usuário.
+6. O moderador tem acesso aos perfis de usuários com o botão "Promover para administrador" para cada respectivo usuário.
+7. O moderador tem acesso aos perfis de usuários com o botão "Retirar administrador" para cada respectivo usuário.
 
-  ### FLUXOS PRINCIPAIS E ALTERNATIVOS PARA FAZER COMENTARIO
 
-  **Fluxos principais**
+### CDU 06
 
-  1. O usuario quando for visualizar o comentario
-  2. Aparecerá uma caixa
-  3. O usuario deverá clicar em cima da caixa
-  4. O usuario poderá escrever o que deseja 
-  5. O autor clica em comentar.
+Editar usuários 
+
+**Fluxo Principal**
+
+1. O moderador clica em "Exibir usuários"
+2. O sistema redireciona o moderador para a página que exibe os usuários cadastrados.
+3. O moderador tem acesso aos perfis de usuários com os botões "Editar usuário" para cada respectivo usuário.
+4. O moderador clica em "Editar usuário" no perfil do usuário desejado.
+7. O sistema redireciona o moderador para a próxima página com os campos "Username", "Email", "Senha", "Nova Senha" e o botão "Enviar".
+8. O moderador clica no botão "Enviar".
+9. O sistema encaminha o moderador para a próxima tela, na qual informa que os dados foram digitados corretamente e foram alterados com sucesso,apresentando o botão "Início".
+
+
+### CDU 07
+
+Buscar usuários 
+
+**Fluxo Principal**
+
+1. O usuário clica no barra de pesquisa de usuário.
+2. O sistema abre a página de pesquisa de usuários.
+3. O usuário digita o username desejado e aperta o botão "Buscar".
+4. O sistema exibe o usuário cadastrados com o respectivo username e o botão "Ver Perfil".
+
+### CDU 08
+
+Excluir Usuário 
+
+**Fluxo Principal**
+
+1. O moderador clica em "Exibir Usuários".
+2. O sistema abre a página contendo todos os usuários cadastrados .
+3. O moderador tem acesso aos perfis de usuários com o botão "Deletar usuário" para cada respectivo usuário.
+4. O sistema redireciona o moderador para a página seguinte, na qual informa que o usuário foi excluído com sucesso e apresenta os botões "Início".
+
+
+### CDU 09
+
+Promover Privilégios de Admnistrador 
+
+**Fluxo Principal**
+
+1. O moderador clica em "Exibir Usuários"
+2. O sistema abre a página contendo todos os usuários cadastrados 
+3. O moderador tem acesso aos perfis de usuários com o botão "Promover para administrador" para cada respectivo usuário.
+
+
+### CDU 10
+
+Retirar Privilégios de Admnistrador
+
+**Fluxo Principal**
+
+1. O moderador clica em "Exibir Usuários"
+2. O sistema abre a página contendo todos os usuários cadastrados 
+3. O moderador tem acesso aos perfis de usuários com o botão "Retirar administrador" para cada respectivo usuário.
+
+### CDU 11
+
+Criar Postagem
+
+**Fluxo Principal**
+
+1. Dentro da página "Home" o usuário escreve sua postagem.
+2. O usuário clica no botão "Publicar".
+3. O usuário permanece na página "Home".
+
+
+### CDU 12
+
+Editar Postagem
+
+**Fluxo Principal**
+
+1. O usuário clica em "Mostrar postagens" dentro da página "Home".
+2. O sistema abre uma página com todas suas postagens.
+3. Embaixo de cada postagem existe o botão alterar postagem.
+4. O usuário edita os campos e clica no botão "Enviar"
+
+
+### CDU 13
+
+Excluir Postagem
+
+**Fluxo Principal**
+
+1. O usuário clica em "Mostrar postagens" dentro da página "Home".
+2. O sistema abre uma página com todas suas postagens.
+3. Embaixo de cada postagem existe o botão excluir postagem.
+4. O sistema abre uma caixa de dialogo com a pergunta "Tem certeza de que deseja excluir a postagem?" com os botões "Ok" e "Cancelar".
+5. O usuário edita os campos e clica no botão "Enviar".
+
+
+
+### CDU 14
+
+Exibir Timeline
+
+**Fluxo Principal**
+
+1. O usuário clica em "Mostrar postagens" dentro da página "Home".
+2. O sistema abre uma página com todas suas postagens.
+
+
+
+### CDU 15
+
+Excluir Postagem como admnistrador
+
+**Fluxo Principal**
+
+1. O moderador clica na barra de pesquisa, onde pesquisa a conta de usuário.
+2. O sistema mostra o resultado da pesquisa com botão de "mostrar postagens" para cada usuário.
+3. O sistema mostra as postagens do usuário selecionado com o botão "Excluir postagem".
+
+
+
+### CDU 16
+
+Criar Comentário
+
+**Fluxo Principal**
+
+1. O usuário navega para a postagem desejada.
+2. O sistema apresenta a postagem,exibindo a quantidade de curtidas da postagem, os comentários feitos e a opção "Comente aqui..." com um botão "Publicar"
+3. O usuário digita o que deseja e clica no botão "Publicar"
+4. O sistema valida o comentário do usuário e recarrega a página atualizando para exibir o mesmo.
+
+
+
+### CDU 17
+
+Editar Comentário
+
+**Fluxo Principal**
+
+1. O usuário abre a postagem desejada.
+2. O sistema mostra um botão de abrir comentários.
+3. O sistema mostra todos os comentários.
+4. O usuário vai no comentário que deseja editar e clica em "Editar" ao lado do mesmo.
+5. O sistema abre o comentário feito anteriormente para que o usuário possa editá-lo.
+6. O usuário edita o comentário e clica em "Enviar"
+7. O sistema valida o comentário do usuário e recarrega a página atualizando para exibir o mesmo.
+
+
+
+### CDU 18
+
+Excluir Comentário
+
+**Fluxo Principal**
+
+1. O usuário navega para a postagem desejada.
+2. O sistema mostra um botão de abrir comentários.
+3. O sistema mostra todos os comentários.
+4. O usuário vai no comentário que deseja editar e clica em "Excluir" ao lado do mesmo.
+5. O usuário clica em "Excluir"
+6. O sistema abre uma caixa de diálogo perguntando se o usuário deseja mesmo excluir o comentário com os botões "OK" e "Cancelar"
+7. O usuário clica em "OK"
+8. O sistema exclui o comentário.
+
+
+### CDU 19
+
+Exibir Comentário na Timeline
+
+**Fluxo Principal**
+
+1. O usuário navega para a postagem desejada.
+2. O sistema mostra um botão de abrir comentários.
+3. O sistema mostra todos os comentários.
+
+
+
+### CDU 20
+
+Curtir Postagem
+
+**Fluxo Principal**
+
+1. O usuário navega para a postagem desejada.
+2. O sistema mostra o botão "Curtir".
+3. O usuário clica no botão "Curtir".
+
+
+
+### CDU 21
+
+Curtir Comentário
+
+**Fluxo Principal**
+
+1. O usuário navega para a postagem desejada.
+2. O sistema mostra um botão de abrir comentários.
+3. O sistema mostra todos os comentários.
+4. O sistema mostra o botão "Curtir".
+5. O usuário clica no botão "Curtir".
+
+
+### CDU 22
+
+Remover Curtirda de Postagem
+
+**Fluxo Principal**
+
+1. O usuário navega para a postagem desejada.
+2. O sistema mostra o botão "Descurtir" caso o usuário já tenha curtido.
+3. O usuário clica no botão "Descurtir".
+
+
+
+### CDU 23
+
+Remover Curtirda de Comentário
+
+**Fluxo Principal**
+1. O usuário navega para a postagem desejada.
+2. O sistema mostra um botão de abrir comentários.
+3. O sistema mostra todos os comentários.
+2. O sistema mostra o botão "Descurtir" caso o usuário já tenha curtido.
+3. O usuário clica no botão "Descurtir".
+
+
+
+### CDU 24
+
+Excluir Comentário como administrador
+
+**Fluxo Principal**
+
+1. O admnistrador navega para a postagem desejada.
+2. O sistema mostra um botão de abrir comentários.
+3. O sistema mostra todos os comentários.
+4. O sistema mostra os comentários com um botão "excluir" ao lado.
+5. O usuário clica em "Excluir"
+6. O sistema abre uma caixa de diálogo perguntando se o usuário deseja mesmo excluir o comentário com os botões "OK" e "Cancelar"
+7. O usuário clica em "OK"
+8. O sistema exclui o comentário.
