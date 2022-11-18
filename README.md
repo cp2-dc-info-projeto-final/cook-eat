@@ -10,7 +10,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
  ## Descrição do Projeto
 
-  Este é um projeto com a intenção de poder compartilhar entre pessoas recomendações de comidas deliciosas.
+  Este é um projeto com a intenção de poder compartilhar entre pessoas recomendações de comidas.
 
 ## Documentação
 
